@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <button id="buy-premium">Buy Premium (No Ads)</button>
         <h1>Cyber Security</h1>
         <div class="subtitle">
             <h2>How to Stay Safe on the Internet...</h2>
@@ -18,21 +19,41 @@
     <main>
         <section>
             <h3>1. Download an Antivirus</h3>
-            <img src="https://via.placeholder.com/600x300?text=Antivirus+Software" alt="Antivirus software screenshot">
-            <p>Antivirus software is the first line of defense for anyone who uses the internet regularly. It scans files, downloads, and websites for harmful code known as malware. Malware includes viruses, trojans, spyware, ransomware, and adware. If malware infects your device it can steal passwords, lock you out of files, or even monitor your every keystroke. Many antivirus products offer free versions that automatically update definitions to catch new threats. Always download antivirus software from the official website of a trusted company. After installation, schedule daily or weekly scans, enable real‑time protection, and keep automatic updates turned on. This small step reduces the chance of falling victim to phishing emails or malicious links. With proper antivirus protection, your device can detect threats before they do damage.</p>
+            <img src="https://www.ncsc.gov.uk/images/Antivirus.png" alt="Antivirus software screenshot">
+            <p>Antivirus software is the first line of defense for anyone who uses the internet regularly. It scans files, downloads, and websites for harmful code known as malware. Malware includes viruses, trojans, spyware, ransomware, and adware. If malware infects your device it can steal passwords, lock you out of files, or even monitor your every keystroke. Many antivirus products offer free versions that automatically update definitions to catch new threats. Always download antivirus software from the official website of a trusted company. After installation, schedule daily or weekly scans, enable real‑time protection, and keep automatic updates turned on. This small step reduces the chance of falling victim to phishing emails or malicious links. With proper antivirus protection, your device can detect threats before they do damage</p>
         </section>
 
         <section>
             <h3>2. Stay Away from “Onions” (The Dark Web)</h3>
-            <img src="https://via.placeholder.com/600x300?text=Dark+Web+Warning" alt="Warning sign for dark web">
+            <img src="https://www.idagent.com/wp-content/uploads/2020/04/thumbnail_Dark-Web-Data-Dump-1024x535-1.png" alt="Warning sign for dark web">
             <p>The dark web is sometimes called “onions” because its sites use a special browser called Tor and end with “.onion.” It hosts illegal marketplaces, stolen data, and scams. Even if you never plan to visit, simply clicking the wrong link can expose your device to malware or phishing attacks. Criminals on the dark web trade personal information like credit card numbers and passwords for profit. They also sell fake IDs, harmful software, and counterfeit goods. Internet users who accidentally land on a dark web page risk having their IP address tracked or files infected. To stay safe, never download the Tor browser without fully understanding its risks. Avoid clicking suspicious links in messages, emails, or ads. If you need privacy, use a virtual private network (VPN) and only visit reputable sites that start with “https://.” Remember: curiosity about the dark web can lead to unwanted trouble and data theft.</p>
         </section>
 
         <section>
             <h3>3. Review Your Safety Regularly</h3>
-            <img src="https://via.placeholder.com/600x300?text=Security+Checklist" alt="Checklist for online security">
+            <img src="https://t2informatik.de/en/wp-content/uploads/sites/2/2019/06/checklist-t2informatik.jpg" alt="Checklist for online security">
             <p>Keeping your online safety up to date is not a one‑time task. New scams, hacks, and phishing techniques appear every day. Schedule a monthly review of your security habits and settings. Start by checking that your operating system and all installed apps are fully updated. Next, change weak passwords and use a password manager to generate and store strong unique passwords for each account. Enable two‑factor authentication wherever possible to add an extra layer of protection. Review connected apps and revoke access for anything you no longer use. Back up important files to an external hard drive or cloud service in case ransomware strikes. Finally, practice caution on social media by limiting public personal information and avoiding posts that reveal your location or travel plans. By reviewing and updating your security regularly, you make it much harder for scammers to steal your money or personal data.</p>
         </section>
     </main>
+
+    <footer>
+        <div class="logo">
+            <img src="https://via.placeholder.com/50" alt="Oblakian Daily logo">
+            <span>Oblakian Daily</span>
+        </div>
+    </footer>
+
+    <script>
+      document.getElementById('buy-premium').addEventListener('click', () => {
+        const choice = prompt('Choose your premium plan:\n1) £2.99 a month\n2) £10 a month');
+        if (choice === '1') {
+          alert('Thanks — you selected £2.99/month.');
+        } else if (choice === '2') {
+          alert('Thanks — you selected £10/month.');
+        } else {
+          alert('No valid option chosen.');
+        }
+      });
+    </script>
 </body>
 </html>
